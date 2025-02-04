@@ -4,12 +4,11 @@ const pool = new Pool({
     user: 'postgres',
     host: 'localhost',
     table: 'tarefas',
-    password: 'postgres', //not my password-I've changed it!
+    password: '*******', //not my password-I've changed it!
     port: 5432
 
 });
 
-//receber somente os parametros para a query, visando a segurança, quando tem passagem de valores.
 const query = (text, params) => {
     return pool.query(text, params);
 }
