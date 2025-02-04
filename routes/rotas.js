@@ -1,5 +1,5 @@
 const express = require('express');
-const tarefas = require("./Controllers/tarefas");
+const tarefas = require("../Controllers/tarefas");
 
 const rotas = express();
 
