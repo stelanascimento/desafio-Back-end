@@ -140,7 +140,7 @@ const criarTarefa = async (req, res) => {
 };
 
 
-//PUT
+//PATCH
 const atualizarTarefa = async (req, res) => { 
     const {id} = req.params;
     const {titulo, status, data_vencimento, descricao} = req.body;
